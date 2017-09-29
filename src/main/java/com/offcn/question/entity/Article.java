@@ -75,6 +75,12 @@ public class Article implements Serializable{
 	public void setTutorial(Tutorial tutorial) {
 		this.tutorial = tutorial;
 	}
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", title=" + title + ", abstracts=" + abstracts + ", content=" + content
+				+ ", postTime=" + postTime + ", clickCount=" + clickCount + ", author=" + author + ", tutorial="
+				+ tutorial + "]";
+	}
 	
 	
 }
